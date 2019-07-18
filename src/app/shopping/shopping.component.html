@@ -1,0 +1,35 @@
+<div id="page-container">
+<div class="daily_offers b_01">
+  <div class="c_1">
+    <p class="cp_1">Headphones daily special offers</p>
+  </div>
+  <section class="daily_header">
+    <div class="b_1">
+      <div class="b_2">
+
+      </div>
+    </div>
+  </section>
+
+  <section class="daily_products">
+    <div class="daily_container">
+      <div class="c_1">
+        <p class="cp_1">Shop Today's Best Online Discounts & Sales</p>
+      </div>
+      <div style="width: 66%;margin-left: 23%;margin-top: 100px;">
+        <div class="special_products" *ngFor="let headphone of headphones; let i = index">
+          <mat-card class="example1-card" id="example1-card">
+            <img src="../../assets/bestprice.jpg" style="width: 38%;">
+            <img class="prod_img" mat-card-image src="{{headphone.img}}">
+            <mat-card-subtitle>{{headphone.name}}</mat-card-subtitle>
+            <button mat-stroked-button color="primary"><i class="fa fa-shopping-cart" style="font-size:24px"></i></button>
+            <mat-card-subtitle class="price">$ <del>{{headphone.oldPrice}}</del></mat-card-subtitle>
+            <mat-card-subtitle class="newPrice">$ {{headphone.newPrice}}</mat-card-subtitle>
+          </mat-card>
+        </div>    
+        </div>
+    </div>
+  </section>
+</div>
+<app-footer></app-footer>
+</div>

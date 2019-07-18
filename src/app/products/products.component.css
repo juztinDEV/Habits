@@ -1,0 +1,77 @@
+.products {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.products_title {
+    padding: 0;
+    margin: 0;
+    text-transform: uppercase;
+    font-size: 32px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+    padding-top: 42px;
+}
+
+.products_text {
+    font-family: 'Times New Roman', Times, serif;
+    letter-spacing: 2px;
+    padding-top: 110px;
+}
+
+.products_table {
+    margin-bottom: 234px;
+    margin-top: 234px;
+}
+
+img {
+    width: 313.13px;
+    height: 313.13px;
+}
+
+.example2-card {
+    cursor: pointer;
+    width: 315px;
+    height: 358px;
+    margin-right: 28px;
+    text-align: center;
+}
+
+
+.first {
+    justify-content: center;
+    margin-bottom: 48px;
+    margin-top: 68px;
+}
+
+.headphones_title {
+    width: 317px;
+    height: 45px;
+    margin-left: -26px;
+    margin-top: -16px;
+}
+
+p.p_headphones {
+    padding-top: 4px;
+    font-style: italic;
+    font-size: 20px;
+}
+
+.shop_categ {
+    text-align: center;
+    font-size: 36px;
+    margin-top: 58px;
+}
+
+#page-container {
+    position: relative;
+    min-height: 100vh;
+}
+
+.example2-card {
+    border: 1px solid black;
+}
+
+.example2-card:hover {
+    border: 1px solid red;
+}

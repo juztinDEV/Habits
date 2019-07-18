@@ -1,0 +1,36 @@
+<div id="page-container">
+<section class="bluetooth_headphones b_01">
+  <app-header-shop></app-header-shop>
+  
+  <div class="loading" *ngIf="!loader">
+    <svg width="450px" height="250px" viewBox="0 0 187.3 93.7" preserveAspectRatio="xMidYMid meet">
+      <path id="infinity-outline" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" 
+            d="M93.9,46.4c9.3,9.5,13.8,17.9,23.5,17.9s17.5-7.8,17.5-17.5s-7.8-17.6-17.5-17.5c-9.7,0.1-13.3,7.2-22.1,17.1                c-8.9,8.8-15.7,17.9-25.4,17.9s-17.5-7.8-17.5-17.5s7.8-17.5,17.5-17.5S86.2,38.6,93.9,46.4z" />
+        <path id="infinity-bg" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" 
+            d="M93.9,46.4c9.3,9.5,13.8,17.9,23.5,17.9s17.5-7.8,17.5-17.5s-7.8-17.6-17.5-17.5c-9.7,0.1-13.3,7.2-22.1,17.1                c-8.9,8.8-15.7,17.9-25.4,17.9s-17.5-7.8-17.5-17.5s7.8-17.5,17.5-17.5S86.2,38.6,93.9,46.4z" />
+        </svg>
+    </div>
+
+  <div class="headphones_h01">
+    <p>Bluetooth Headphones</p>
+  </div>
+  <div class="container">
+      <div class="row">
+          <div class="col-md-2 bluetooth_headphones_products" *ngFor="let headphone of headphones; let i = index">
+            <mat-card class="example1-card" id="example1-card">
+              <img class="prod_img" mat-card-image src="{{headphone.img}}">
+              <mat-card-subtitle>{{headphone.name}}</mat-card-subtitle>
+              <mat-card-subtitle class="price">$ {{headphone.price}}</mat-card-subtitle>
+              <mat-card-actions class="rate_products">
+                <button mat-stroked-button>Add</button>
+                <button mat-stroked-button>Share</button>
+              </mat-card-actions>
+              <button mat-stroked-button color="primary" [disabled]="disableButton" [value]="headphone.id" (click)="onAddItem(i)"><i class="fa fa-shopping-cart" style="font-size:24px"></i></button>
+            </mat-card>
+          </div>    
+          </div>
+  </div>
+</section>
+<app-footer></app-footer>
+</div>
+

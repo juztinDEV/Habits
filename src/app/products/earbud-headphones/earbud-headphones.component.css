@@ -1,0 +1,107 @@
+.headphones_h01 {
+    font-size: 32px;
+    text-align: center;
+    margin-top: 58px;
+}
+
+.example1-card {
+    cursor: pointer;
+    width: 215px;
+    height: 404px;
+    margin-right: 28px;
+    text-align: center;;
+}
+
+
+.first {
+    justify-content: center;
+    margin-bottom: 48px;
+    margin-top: 12px;
+}
+
+.earbud_headphones_products {
+    display: inline-block;
+    justify-content: center;
+    margin: 64px 0px 64px 80px;
+    margin-top: 64px;
+    margin-bottom: 64px;
+}
+
+.mat-card-subtitle {
+        font-style: italic;
+        color: black;
+        margin-bottom: 0;
+}
+
+.price {
+    color: red;
+    padding-top: 15px;
+}
+
+.rate_products {
+padding: 0;
+margin-top: 11px;
+}
+
+.mat-stroked-button {
+    margin-right: 4px;
+}
+
+.example1-card:hover {
+    -webkit-box-shadow: 0px -1px 9px 2px rgba(179,0,0,1);
+    -moz-box-shadow: 0px -1px 9px 2px rgba(179,0,0,1);
+    box-shadow: 0px -1px 9px 2px rgba(179,0,0,1);
+    }
+
+#page-container {
+        position: relative;
+        min-height: 100vh;
+    }
+
+    .loading {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+      }
+      .loading svg {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+      }
+      
+      #infinity-outline {
+        fill: transparent;
+        stroke-width: 4;
+        stroke: red;
+        stroke-dasharray: 3px, 300px;
+        stroke-dashoffset: 0;
+        animation: anim 3000ms linear infinite;
+      }
+      
+      #infinity-bg {
+        fill: transparent;
+        stroke-width: 4;
+        stroke: #424242;
+        opacity: 0.2;
+      }
+      
+      @keyframes anim {
+        12.5% {
+          stroke-dasharray: 42px, 300px;
+          stroke-dashoffset: -33px;
+        }
+        43.75% {
+          stroke-dasharray: 105px, 300px;
+          stroke-dashoffset: -105px;
+        }
+        100% {
+          stroke-dasharray: 3px, 300px;
+          stroke-dashoffset: -297px;
+        }
+      }

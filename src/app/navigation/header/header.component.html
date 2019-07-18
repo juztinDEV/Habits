@@ -1,0 +1,21 @@
+<mat-toolbar>
+  <div fxHide.gt-xs>
+    <button mat-icon-button (click)="onToggleSidenav()">
+      <mat-icon>menu</mat-icon>
+    </button>
+  </div>
+  <div>
+    <a href="../home"><img class="logo-habits" src="../../../assets/logo.png"></a>
+  </div>
+  <div fxFlex fxLayout fxLayoutAlign="flex-end" fxHide.xs>
+    <ul fxLayout class="navigation-items">
+      <li><a class="link-1" routerLink="/home">Home</a></li>
+      <li><a class="link-1" routerLink="/about">About Us</a></li>
+      <img class="header-habits" src="../../../assets/header_H.png">
+      <li><a class="link-1" routerLink="/products">Products</a></li>
+      <li><a class="link-1" routerLink="/special-offers">Special Offers</a></li>
+      <p class="itemNumber" *ngIf="showItem">{{totalItemsInCart}}</p>
+      <button class="shop-header" routerLink="/shopping-cart" mat-stroked-button color="primary"><i class="fa fa-shopping-cart" style="font-size:35px"></i></button>
+    </ul>
+  </div>
+</mat-toolbar>
